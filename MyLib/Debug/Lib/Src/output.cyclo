@@ -1,0 +1,5 @@
+../Lib/Src/output.c:15:13:turn_on	1
+../Lib/Src/output.c:21:13:turn_off	1
+../Lib/Src/output.c:27:13:toggle	2
+../Lib/Src/output.c:36:13:is_on	1
+../Lib/Src/output.c:41:9:new_Output	2

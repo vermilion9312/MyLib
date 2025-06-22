@@ -1,0 +1,5 @@
+../Lib/Src/input.c:10:13:update	3
+../Lib/Src/input.c:26:13:is_on	1
+../Lib/Src/input.c:31:13:on_rising_edge	3
+../Lib/Src/input.c:41:13:on_falling_edge	3
+../Lib/Src/input.c:51:8:new_Input	1
