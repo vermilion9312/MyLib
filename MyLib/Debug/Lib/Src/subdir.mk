@@ -6,15 +6,18 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Lib/Src/input.c \
-../Lib/Src/output.c 
+../Lib/Src/output.c \
+../Lib/Src/rc_servo.c 
 
 OBJS += \
 ./Lib/Src/input.o \
-./Lib/Src/output.o 
+./Lib/Src/output.o \
+./Lib/Src/rc_servo.o 
 
 C_DEPS += \
 ./Lib/Src/input.d \
-./Lib/Src/output.d 
+./Lib/Src/output.d \
+./Lib/Src/rc_servo.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -24,7 +27,7 @@ Lib/Src/%.o Lib/Src/%.su Lib/Src/%.cyclo: ../Lib/Src/%.c Lib/Src/subdir.mk
 clean: clean-Lib-2f-Src
 
 clean-Lib-2f-Src:
-	-$(RM) ./Lib/Src/input.cyclo ./Lib/Src/input.d ./Lib/Src/input.o ./Lib/Src/input.su ./Lib/Src/output.cyclo ./Lib/Src/output.d ./Lib/Src/output.o ./Lib/Src/output.su
+	-$(RM) ./Lib/Src/input.cyclo ./Lib/Src/input.d ./Lib/Src/input.o ./Lib/Src/input.su ./Lib/Src/output.cyclo ./Lib/Src/output.d ./Lib/Src/output.o ./Lib/Src/output.su ./Lib/Src/rc_servo.cyclo ./Lib/Src/rc_servo.d ./Lib/Src/rc_servo.o ./Lib/Src/rc_servo.su
 
 .PHONY: clean-Lib-2f-Src
 

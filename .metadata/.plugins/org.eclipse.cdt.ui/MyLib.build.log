@@ -1,10 +1,17 @@
-01:31:06 **** Incremental Build of configuration Debug for project MyLib ****
+23:18:29 **** Incremental Build of configuration Debug for project MyLib ****
 make -j4 all 
+arm-none-eabi-gcc "../Lib/Src/rc_servo.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Lib/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Lib/Src/rc_servo.d" -MT"Lib/Src/rc_servo.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Lib/Src/rc_servo.o"
+arm-none-eabi-gcc -o "MyLib.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Github\MyLib\MyLib\STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MyLib.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MyLib.elf
+ 
 arm-none-eabi-size  MyLib.elf 
+arm-none-eabi-objdump -h -S MyLib.elf  > "MyLib.list"
    text	   data	    bss	    dec	    hex	filename
-   7180	     92	   1900	   9172	   23d4	MyLib.elf
+   9496	     92	   1972	  11560	   2d28	MyLib.elf
 Finished building: default.size.stdout
  
+Finished building: MyLib.list
+ 
 
-01:31:06 Build Finished. 0 errors, 0 warnings. (took 381ms)
+23:18:30 Build Finished. 0 errors, 0 warnings. (took 1s.164ms)
 

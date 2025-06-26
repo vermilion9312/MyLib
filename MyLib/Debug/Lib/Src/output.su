@@ -1,5 +1,5 @@
 ../Lib/Src/output.c:15:13:turn_on	16	static
 ../Lib/Src/output.c:21:13:turn_off	16	static
 ../Lib/Src/output.c:27:13:toggle	16	static
-../Lib/Src/output.c:36:13:is_on	16	static
-../Lib/Src/output.c:41:9:new_Output	24	static
+../Lib/Src/output.c:32:13:is_on	16	static
+../Lib/Src/output.c:37:9:new_Output	24	static
